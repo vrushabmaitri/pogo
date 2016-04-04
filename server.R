@@ -7,7 +7,7 @@ library(SnowballC)
 library(indicoio)
 library(jsonlite)
 
-setwd("/Users/liuchang/Documents/STUDY/Projects/Pogo")
+setwd("/home/vrushab/Desktop/pogo-master")
 
 
 get_twitter<-function(input_str) {
@@ -143,7 +143,7 @@ BestBuy_boxplot<-function(query) {
 
 # define a function generating a NYT sentiments histogram
 get_NYTdata<-function(qString) {
-  nyArts <- system(paste("/Users/liuchang/anaconda/bin/python api_nytimes.py ",
+  nyArts <- system(paste("/home/vrushab/Desktop/pogo-master api_nytimes.py ",
                          qString, sep=""), intern = TRUE)
 }
 
